@@ -17,8 +17,24 @@ int main (int argc, char *argv[]){
     }
 
     for(int i = 0; i < qtd_pessoas; i++){
+        printf("Digite idade: ");
+        while (scanf("%d", &idade) != 1){
+            printf("INVALIDO, Digite um valor inteiro valido: ");
+            while(getchar() != '\n');
+        }
         
+        if (i == 1){
+            menor = idade;
+            maior = idade;
+        } else {
+            if (idade > menor){
+                menor = idade;
+            } else if (idade < maior){
+                maior = idade;
+            }
+        }
     }
 
+    printf("\nMaior idade: %d\nMenor idade: %d\n", maior, menor);
     return 0;
 }
