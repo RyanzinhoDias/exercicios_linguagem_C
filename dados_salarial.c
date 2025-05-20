@@ -1,29 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Função que verifica se o dado de entrada é inteiro
+int validacao_inteiros(int entrada){
+    while (scanf("%d", &entrada) != 1){
+        printf("INVALIDO, Digite um valor inteiro valido: ");
+        while(getchar() != '\n');
+    }
+    return entrada;
+}
+
+
 int main (int argc, char *argv[]){
     printf("-=- PREENCHA COM A AMOSTRA DA SUA REGIÃO -=-\n");
     printf("-=- Sera possivel informar IDADE, SEXO E SALARIO, ao processar os dados, entregamos a MEDIA SALARIAL, MAIOR E MENOR IDADE, QTD DE MULHERES QUE RECEBEM MAIS DE 2000,00\n");
-
-    int idade, maior = 0, menor = 0, qtd_pessoas;
+    
+    int entrada_idade, maior = 0, menor = 0, quantidade;
     //float salario;
     //char sexo;
     
     printf("Quantidade de pessoas na amostra: ");
-
-    while (scanf("%d", &qtd_pessoas) != 1){
-        printf("INVALIDO, Digite um valor inteiro valido: ");
-        while(getchar() != '\n');
-    }
+    int qtd_pessoas = validacao_inteiros(quantidade);
 
     for(int i = 0; i < qtd_pessoas; i++){
         printf("Digite idade: ");
-        while (scanf("%d", &idade) != 1){
-            printf("INVALIDO, Digite um valor inteiro valido: ");
-            while(getchar() != '\n');
-        }
+        int idade = validacao_inteiros(entrada_idade);
         
-        if (i == 1){
+        //Verificanco se o dado atual digitado é maior ou menor que o anteior
+        if (i == 0){
             menor = idade;
             maior = idade;
         } else {
