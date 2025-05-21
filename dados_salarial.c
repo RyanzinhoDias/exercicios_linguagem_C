@@ -10,6 +10,7 @@ int validacao_inteiros(int entrada){
     return entrada;
 }
 
+//Função que verifica se o dado de entrada é float
 float validacao_reais(float entrada){
     while (scanf("%f", &entrada) != 1){
         printf("INVALIDO, digite um valor real: ");
@@ -23,30 +24,40 @@ int main (int argc, char *argv[]){
     printf("-=- PREENCHA COM A AMOSTRA DA SUA REGIÃO -=-\n");
     printf("-=- Sera possivel informar IDADE, SEXO E SALARIO, ao processar os dados, entregamos a MEDIA SALARIAL, MAIOR E MENOR IDADE, QTD DE MULHERES QUE RECEBEM MAIS DE 2000,00\n");
     
-    int entrada_idade, maior = 0, menor = 0, quantidade;
+    int entrada_idade, maior = 0, menor = 0, quantidade, qtd_mulheres = 0;
     float montante, entrada_salario;
-    //char sexo;
+    char sexo;
     
     printf("Quantidade de pessoas na amostra: ");
     int qtd_pessoas = validacao_inteiros(quantidade);
 
     for(int i = 0; i < qtd_pessoas; i++){
-        printf("Digite idade: ");
+        printf("\nDigite idade: ");
         int idade = validacao_inteiros(entrada_idade);
+        
+        //Recebe e processa o sexo
+        printf("Digite o sexo [F/M]: ");
+        getchar();
+        scanf("%c", &sexo);
         
         //Recebendo Salário e somando o salário a cada iteração
         printf("Digite o seu salario: ");
         float salario = validacao_reais(entrada_salario); 
         montante += salario;
-
+                
+        //Verificando mulheres que recebem mais de R$ 2000,00
+        if (sexo == 'F' && salario >= 2000){
+            qtd_mulheres++;
+        }
+        
         //Verificanco se o dado atual digitado é maior ou menor que o anteior
         if (i == 0){
             menor = idade;
             maior = idade;
         } else {
-            if (idade > menor){
+            if (idade < menor){
                 menor = idade;
-            } else if (idade < maior){
+            } else if (idade > maior){
                 maior = idade;
             }
         }
@@ -55,7 +66,10 @@ int main (int argc, char *argv[]){
     }
 
     float media =  montante/qtd_pessoas;
-    printf("Media: R$ %.2f", media);
-    printf("\nMaior idade: %d\nMenor idade: %d\n", maior, menor);
+
+    //saidas
+    printf("\n>>> Media: R$ %.2f", media);
+    printf("\n>>> Maior idade: %d\n>>>Menor idade: %d\n", maior, menor);
+    printf(">>> A quantidade de mulheres que recebem mais que R$ 2000,00: %d\n\n", qtd_mulheres);
     return 0;
 }
