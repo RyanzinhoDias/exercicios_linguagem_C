@@ -1,3 +1,5 @@
+/*6) Faça um programa que imprima na tela todos os múltiplos entre 1 e 9999.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

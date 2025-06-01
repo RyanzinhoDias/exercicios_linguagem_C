@@ -1,3 +1,10 @@
+/*18) Foi feita uma pesquisa entre os habitantes de uma região e foram coletados os dados de idade,
+sexo (M/F) e salário de X pessoas (x deve ser informado pelo usuário). Faça um algoritmo que
+informe:
+a) a média de salário do grupo;
+b) a maior e a menor idade do grupo;
+c) a quantidade de mulheres com salário até R$2000,00.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,3 +1,5 @@
+/*3) Faça um programa que some os números ímpares entre  os valores informado para a range e imprima a resposta.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

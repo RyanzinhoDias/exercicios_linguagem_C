@@ -1,3 +1,6 @@
+/*13) Faça um programa que peça ao usuário um número inteiro maior que 2 e diga se o número
+informado é primo ou não.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

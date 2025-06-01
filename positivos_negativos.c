@@ -1,3 +1,6 @@
+/*17) Faça um programa que peça números ao usuário. Quando o usuário digitar o número 0 (zero) o
+programa deve imprimir na tela quantos números positivos e negativos foram digitados.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

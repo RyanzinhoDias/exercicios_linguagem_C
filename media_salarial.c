@@ -1,3 +1,7 @@
+/*14) Faça um programa que calcule a média de salários de uma empresa, pedindo ao usuário a
+quantidade de funcionários e o salário de cada funcionário. Ao final, o programa deve imprimir a
+média dos salários informados, o salário mais alto e o salário mais baixo.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

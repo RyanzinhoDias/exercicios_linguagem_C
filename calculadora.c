@@ -1,3 +1,11 @@
+/*8) Escreva um programa em C que funcione como uma calculadora. O programa deve apresentar
+um menu ao usuário da seguinte forma:
+1 – Somar
+2 – Subtrair
+3 – Multiplicar
+4 – Dividir
+0 – Sair*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
