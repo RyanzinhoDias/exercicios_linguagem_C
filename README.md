@@ -30,7 +30,7 @@ Você pode me encontrar em:
 
 - [LinkedIn](https://www.linkedin.com/in/ryan-dias-dos-santos-nascimento/)
 - [GitHub](https://github.com/RyanzinhoDias)
-- [E-mail}(ryanddsn0@gmail.com)
+- [E-mail](ryanddsn0@gmail.com)
 
 ---
 
