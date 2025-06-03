@@ -1,6 +1,6 @@
 # 💡 Exercícios em C — Lógica de Programação
 
-Este repositório reúne uma coleção de exercícios resolvidos em linguagem C, com o objetivo de praticar e aprimorar minha lógica de programação e domínio da linguagem. Os exercícios são variados e cobrem temas fundamentais da programação estruturada.
+Este repositório reúne uma coleção de exercícios resolvidos em linguagem C, com o objetivo de praticar e aprimorar minha lógica de programação, algoritimos, estrutura de dados e domínio da linguagem. Os exercícios são variados e cobrem temas fundamentais da programação estruturada.
 
 ## 🧠 Objetivos
 
@@ -19,10 +19,6 @@ Os exercícios estão organizados por temas. Cada arquivo contém:
 ## 🚀 Em Desenvolvimento
 
 Esse repositório está em constante crescimento. À medida que eu avanço nos estudos, novos exercícios e melhorias serão adicionados.
-
-## 📌 Sobre Mim
-
-Sou um estudante e entusiasta da área de desenvolvimento de software, com foco atual em lógica de programação, algoritmos e estrutura de dados.
 
 ## 📬 Contato
 
