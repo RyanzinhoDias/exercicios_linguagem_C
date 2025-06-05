@@ -11,8 +11,11 @@ int main(int argc, char *argv[]) {
 
     for (int i = 0; i < 10; i++) {
         printf("Digite um valor: ");
-        //adicionando os valores normais de entrada no vetor
-        scanf("%d", &vetor_entrada[i]);
+        while (scanf("%d", &vetor_entrada[i]) != 1){
+            printf("ERRO: Digite um número inteiro: ");
+            while(getchar() != '\n');
+        }
+
         //adicionando o quadrado dos valores no seu respectivo vetor, diretamente na entrada, pois implementar outro loop seria mais custo de tempo
         vetor_quadrado[i] = vetor_entrada[i] * vetor_entrada[i]; 
     }
