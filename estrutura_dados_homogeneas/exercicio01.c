@@ -6,19 +6,20 @@ fim, imprima os dois vetores. */
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-    int entrada = 0;
     int vetor_entrada[10];
+    int vetor_quadrado[10];
 
-    for (int i = 1; i <= 10; i++) {
-        printf("Digite um valor para a %dª posição ", i);
-        scanf("%d", &entrada);
-        vetor_entrada[i] = entrada;
+    for (int i = 0; i < 10; i++) {
+        printf("Digite um valor: ");
+        //adicionando os valores normais de entrada no vetor
+        scanf("%d", &vetor_entrada[i]);
+        //adicionando o quadrado dos valores no seu respectivo vetor, diretamente na entrada, pois implementar outro loop seria mais custo de tempo
+        vetor_quadrado[i] = vetor_entrada[i] * vetor_entrada[i]; 
     }
-
-    for (int p = 0; p <= 10; p++) {
-        printf(">>> Posição: %d\n", p);
+    
+    for (int p = 0; p < 10; p++) {
+        printf("\n>>> Vetor normal: %d | Vetor quadrado: %d\n", vetor_entrada[p], vetor_quadrado[p]);
     }
 
     return 0;
-
 }
