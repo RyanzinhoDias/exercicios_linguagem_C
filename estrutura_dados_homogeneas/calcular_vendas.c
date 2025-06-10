@@ -35,6 +35,11 @@ int main(){
         valor_total += valor_produtos[i]; 
  
     }
+    
+    printf("\n          QUANTIDADE VENDIDA ----- VALOR UNITARIO ----- VALOR TOTAL\n");
+    for(int p = 0; p < 10; p++){
+        printf("Produto %d\n", p);
+    }
 
     printf("\nTotal vendido: %.2f\n", valor_total);
 

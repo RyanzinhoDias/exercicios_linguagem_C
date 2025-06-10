@@ -1,4 +1,4 @@
-/* 3) Escrever um programa que tem um vetor N de tamanho 20 e o imprime na tela. Em seguida, troque
+/* 3) Escrever um programa que tem   um vetor N de tamanho 20 e o imprime na tela. Em seguida, troque
 o 1º elemento com o último, o 2ª com o penúltimo, ... até o 10ª com o 11º. Imprima o vetor N
 modificado. */
 
