@@ -5,9 +5,7 @@ vendida de cada objeto deve ficar em outro vetor, mas na mesma posição. Crie u
 receba os preços e as quantidades vendidas, armazenando-os em seus respectivos vetores. Depois,
 determine e mostre:
 a) A quantidade vendida, valor unitário e valor total de cada objeto. Ao final, deverão ser mostrados
-o valor total das vendas e o valor da comissão que será paga ao vendedor.
-b) O valor do objeto mais vendido e sua posição no vetor (em caso de empates mostre todos
-empatados).*/
+o valor total das vendas e o valor da comissão que será paga ao vendedor.*/
 
 #include <stdio.h>
 //#include <stdlib.h>
@@ -15,7 +13,7 @@ empatados).*/
 int main(){
     //criando vetores
     int qtd_vendida[10]; 
-    float valor_produtos[10], valor_total;
+    float valor_produtos[10];
 
     printf("--- Digite valor unitario e a quantidade vendida de cada produto ---\n");
     for(int i = 0; i < 10; i++){
@@ -31,17 +29,13 @@ int main(){
             printf("ERRO: Digite um valor do tipo INTEIRO: ");
             while(getchar() != '\n');
         }
-        
-        valor_total += valor_produtos[i]; 
- 
+
     }
     
     printf("\n          QUANTIDADE VENDIDA ----- VALOR UNITARIO ----- VALOR TOTAL\n");
     for(int p = 0; p < 10; p++){
-        printf("Produto %d\n", p);
+        printf("Produto %d | %d | %.2f | %.2f\n", p, qtd_vendida[p], valor_produtos[p], (qtd_vendida[p] * valor_produtos[p]));
     }
-
-    printf("\nTotal vendido: %.2f\n", valor_total);
 
     return 0;
 }
