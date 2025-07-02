@@ -49,6 +49,7 @@ int main(){
             }
             break;
         default:
+            printf("Opção invalida!!!");
             break;
         }
 
